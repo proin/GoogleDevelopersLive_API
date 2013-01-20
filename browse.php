@@ -1,8 +1,15 @@
 <?php
 //DOM Document URL and Parameter
-$category	= $_GET['category'];
-$token		= $_GET['token'];
-$strUrl		= "https://developers.google.com/live/$category/browse?c=$token";
+$code	= $_GET['code'];
+$token	= $_GET['token'];
+
+$strUrl		= "https://developers.google.com/live/$code/browse?c=$token";
+if ($code == 'all' || strlen($code) == 0) {
+	$strUrl = "https://developers.google.com/live/browse?c=$token";	
+}
+else if (strlen($code) == 1) {
+	$strUrl = "https://developers.google.com/live/+/browse?c=$token";
+}
 
 //Dom Object
 $domObject	= new DOMDocument();
