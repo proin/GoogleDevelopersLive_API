@@ -1,4 +1,4 @@
 GoogleDevelopersLive_API
 =================
 
-An API for Parsing Google Developers Website
+An API for Parsing Google Developers Live Website
