@@ -1,5 +1,5 @@
 <?php
-//DOM Document URL and Parameter
+//DOM Document URL
 $strUrl = "https://developers.google.com/live/browse";
 
 //Dom Object
@@ -29,7 +29,6 @@ foreach ($categoryElement as $key => $categoryNode)
 		
 		//<title>
 		$parsedTitle = $categoryNode -> nodeValue;
-		/* $tmpString	 = htmlspecialchars($parsedTitle); */
 		$xml		.= "<title>$parsedTitle</title>";
 		
 		//<code>

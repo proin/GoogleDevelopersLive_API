@@ -7,7 +7,7 @@ $strUrl		= "https://developers.google.com/live/$code/browse?c=$token";
 if ($code == 'all' || strlen($code) == 0) {
 	$strUrl = "https://developers.google.com/live/browse?c=$token";	
 }
-else if (strlen($code) == 1) {
+else if (strlen($code) == 1) {	//$code == +
 	$strUrl = "https://developers.google.com/live/+/browse?c=$token";
 }
 
@@ -49,7 +49,7 @@ foreach ($titleElement as $key => $titleNode)
 		
 		//<link>
 		$parsedLink	 = $titleNode -> getAttribute('href');
-		$xml		.= "<link>https://developers.google.com$parsedLink</link>";
+		$xml		.= "<link>$parsedLink</link>";
 		
 		//<image>
 		$parsedImage = $imageNode -> getAttribute('src');
