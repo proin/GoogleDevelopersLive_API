@@ -19,6 +19,7 @@ $imageElement	= $xPathObject -> query("//img[@class='video-thumbnail']");
 $dateElement	= $xPathObject -> query("//section[@id='previous-shows']/ol/li");
 $tokenElement	= $xPathObject -> query("//section[@id='previous-shows']/ol/div");
 
+//Add header
 $xml = "<?xml version='1.0' encoding='UTF-8'?>";
 $xml .= "<root>";
 
@@ -63,8 +64,9 @@ if ($tokenNode) {
 	$xml		.= "<nextPageToken>$parsedToken</nextPageToken>";
 }
 
-
 $xml .= "</root>";
+
+//Generate XML
 header('Content-type: text/xml');
 echo $xml;
 ?>
