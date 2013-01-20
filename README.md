@@ -11,8 +11,9 @@ An API for Parsing Google Developers Website
 		- category : category.php 에서 반환한, 각 카테고리별 고유 값
 		- token		 : parameter.php 에서 반환한, 다음 페이지의 고유 값 (미입력시 첫페이지)
 		- 사용 예 : [http://mob.korea.ac.kr/enginie/gdlive/browse.php?category=ads&token=](http://mob.korea.ac.kr/enginie/gdlive/browse.php?category=ads&token=)
-
 	2. XML
+
+
 ```
 <root>
 	<data>
