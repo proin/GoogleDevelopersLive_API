@@ -13,14 +13,11 @@ An API for Google Developers Live. You can get categories, list of shows and vid
 ### Step 1.
 Get list of categories from `category.php`.
 
-
 ##### HTTP request
 ex) `GET http://mob.korea.ac.kr/enginie/gdlive/api/category.php`
 
-
 ##### Parameters
 There is no parameters.
-
 
 ##### Response
 * \<title\> : The title of category. _(string)_
@@ -48,19 +45,15 @@ There is no parameters.
 </root>
 ```
 
-
 ### Step 2.
 Get list of shows in selected category from `brwose.php`.
-
 
 ##### HTTP request
 ex) `GET http://mob.korea.ac.kr/enginie/gdlive/api/browse.php`
 
-
 ##### Parameters
 * code : The **code** parameter which is from response of ‘category.php’, specifies a Google Developers Live category. _(string)_
 * token : The **token** parameter identifies a specific page in the result set that should be returned. In an API response, the **nextPageToken** properties identify other pages that could be retrieved. _(string)_
-
 
 ##### Response
 * \<title\> : The title of video. _(string)_
@@ -100,18 +93,14 @@ ex) `GET http://mob.korea.ac.kr/enginie/gdlive/api/browse.php`
 </root>
 ```
 
-
 ### Step 3.
 Get video information from `shows.php`.
-
 
 ##### HTTP request
 ex) `GET http://mob.korea.ac.kr/enginie/gdlive/api/shows.php`
 
-
 ##### Parameters
 * link : The **link** parameter which is from response of ‘browse.php’, specifies a selected Google Developers Live video’s web page. _(string)_
-
 
 ##### Response
 * \<id\> : The id specifies the YouTube video ID. _(string)_
