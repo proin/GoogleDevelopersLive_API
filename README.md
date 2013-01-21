@@ -23,8 +23,8 @@ There is no parameters.
 
 
 ##### Response
-* \<title\> : The title of category.
-* \<code\> : The code of category, which is use for `browse.php`.
+* \<title\> : The title of category. (string)
+* \<code\> : The code of category, which is use for `browse.php`. (string)
 
 ```xml
 <?xml version='1.0' encoding='UTF-8'?>
@@ -63,11 +63,11 @@ ex) `GET http://mob.korea.ac.kr/enginie/gdlive/api/browse.php`
 
 
 ##### Response
-* \<title\> : The title of video.
-* \<link\> : The link of show’s web page.
-* \<image\> : The URL of preview image.
-* \<date\> : The date when show was updated.
-* \<nextPageToken\> : The token that can be used as the value of the **token** parameter to retrieve the next page in the result set.
+* \<title\> : The title of video. (string)
+* \<link\> : The link of show’s web page. (string)
+* \<image\> : The URL of preview image. (string)
+* \<date\> : The date when show was updated. (string)
+* \<nextPageToken\> : The token that can be used as the value of the **token** parameter to retrieve the next page in the result set. (string)
 
 ```xml
 <?xml version='1.0' encoding='UTF-8'?>
