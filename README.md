@@ -64,7 +64,7 @@ ex) `GET http://mob.korea.ac.kr/enginie/gdlive/api/browse.php`
 
 ##### Response
 * \<title\> : The title of video. (string)
-* \<link\> : The link of show’s web page. (string)
+* \<link\> : The sub-URL of show’s web page. (string)
 * \<image\> : The URL of preview image. (string)
 * \<date\> : The date when show was updated. (string)
 * \<nextPageToken\> : The token that can be used as the value of the **token** parameter to retrieve the next page in the result set. (string)
@@ -97,5 +97,39 @@ ex) `GET http://mob.korea.ac.kr/enginie/gdlive/api/browse.php`
 	<nextPageToken>
 		E-ABAOsB8gEJZGF0ZV90aW1l-gEJCIDcvfrW6rQC7AGCAiVqE3N-Z29vZ2xlLWRldmVsb3BlcnNyDgsSBUV2ZW50GLa_lBAMFA==
 	</nextPageToken>
+</root>
+```
+
+
+### Step 3.
+Get video information from `shows.php`.
+
+
+##### HTTP request
+ex) `GET http://mob.korea.ac.kr/enginie/gdlive/api/shows.php`
+
+
+##### Parameters
+* link : The **link** parameter which is from response of ‘browse.php’, specifies a selected Google Developers Live video’s web page. (string)
+
+
+##### Response
+* \<id\> : The id specifies the YouTube video ID. (string)
+* \<youtube\> : The URL of YouTube video. (string)
+* \<embed\> : An embed player for YouTube video. (string)
+* \<about\> : The Description about YouTube video. (string)
+
+```xml
+<?xml version='1.0' encoding='UTF-8'?>
+<root>
+	<data>
+		<number>0</number>
+		<id>rrrNH7iDV6A</id>
+		<youtube>http://www.youtube.com/watch?v=rrrNH7iDV6A</youtube>
+		<embed>http://www.youtube.com/embed/rrrNH7iDV6A</embed>
+		<about>
+			About: Santa went mobile this year! Join the Android team for a behind-the-scenes look at the making-of the Santa Tracker mobile app.
+		</about>
+	</data>
 </root>
 ```
