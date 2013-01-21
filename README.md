@@ -15,6 +15,9 @@ Get list of categories from category.php
 
 ex) [http://mob.korea.ac.kr/enginie/gdlive/api/category.php](http://mob.korea.ac.kr/enginie/gdlive/api/category.php)
 
+* \<title\> : Category Title
+* \<code\> : Category Code
+
 ```xml
 <root>
 	<data>
@@ -35,5 +38,3 @@ ex) [http://mob.korea.ac.kr/enginie/gdlive/api/category.php](http://mob.korea.ac
 	</data>
 </root>
 ```
-
-* “<title>” : 
