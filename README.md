@@ -95,7 +95,7 @@ ex) `GET http://mob.korea.ac.kr/enginie/gdlive/api/browse.php`
 		<date>Jan. 15, 2013, 10:30 a.m.</date>
 	</data>
 	<nextPageToken>
-E-ABAOsB8gEJZGF0ZV90aW1l-gEJCIDcvfrW6rQC7AGCAiVqE3N-Z29vZ2xlLWRldmVsb3BlcnNyDgsSBUV2ZW50GLa_lBAMFA==
+		E-ABAOsB8gEJZGF0ZV90aW1l-gEJCIDcvfrW6rQC7AGCAiVqE3N-Z29vZ2xlLWRldmVsb3BlcnNyDgsSBUV2ZW50GLa_lBAMFA==
 	</nextPageToken>
 </root>
 ```
