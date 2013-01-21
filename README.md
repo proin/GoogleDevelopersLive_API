@@ -58,8 +58,8 @@ ex) `GET http://mob.korea.ac.kr/enginie/gdlive/api/browse.php`
 
 
 ##### Parameters
-* code : The code parameter which is from response of ‘category.php’, specifies a Google Developers Live category.
-* token : The token parameter identifies a specific page in the result set that should be returned. In an API response, the nextPageToken properties identify other pages that could be retrieved.
+* code : The **code** parameter which is from response of ‘category.php’, specifies a Google Developers Live category.
+* token : The **token** parameter identifies a specific page in the result set that should be returned. In an API response, the **nextPageToken** properties identify other pages that could be retrieved.
 
 
 ##### Response
