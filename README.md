@@ -23,8 +23,8 @@ There is no parameters.
 
 
 ##### Response
-* \<title\> : The title of category. (string)
-* \<code\> : The code of category, which is use for `browse.php`. (string)
+* \<title\> : The title of category. _(string)_
+* \<code\> : The code of category, which is use for `browse.php`. _(string)_
 
 ```xml
 <?xml version='1.0' encoding='UTF-8'?>
@@ -58,16 +58,16 @@ ex) `GET http://mob.korea.ac.kr/enginie/gdlive/api/browse.php`
 
 
 ##### Parameters
-* code : The **code** parameter which is from response of ‘category.php’, specifies a Google Developers Live category.
-* token : The **token** parameter identifies a specific page in the result set that should be returned. In an API response, the **nextPageToken** properties identify other pages that could be retrieved.
+* code : The **code** parameter which is from response of ‘category.php’, specifies a Google Developers Live category. _(string)_
+* token : The **token** parameter identifies a specific page in the result set that should be returned. In an API response, the **nextPageToken** properties identify other pages that could be retrieved. _(string)_
 
 
 ##### Response
-* \<title\> : The title of video. (string)
-* \<link\> : The sub-URL of show’s web page. (string)
+* \<title\> : The title of video. _(string)_
+* \<link\> : The sub-URL of show’s web page. _(string)_
 * \<image\> : The URL of preview image. (string)
-* \<date\> : The date when show was updated. (string)
-* \<nextPageToken\> : The token that can be used as the value of the **token** parameter to retrieve the next page in the result set. (string)
+* \<date\> : The date when show was updated. _(string)_
+* \<nextPageToken\> : The token that can be used as the value of the **token** parameter to retrieve the next page in the result set. _(string)_
 
 ```xml
 <?xml version='1.0' encoding='UTF-8'?>
@@ -110,14 +110,14 @@ ex) `GET http://mob.korea.ac.kr/enginie/gdlive/api/shows.php`
 
 
 ##### Parameters
-* link : The **link** parameter which is from response of ‘browse.php’, specifies a selected Google Developers Live video’s web page. (string)
+* link : The **link** parameter which is from response of ‘browse.php’, specifies a selected Google Developers Live video’s web page. _(string)_
 
 
 ##### Response
-* \<id\> : The id specifies the YouTube video ID. (string)
-* \<youtube\> : The URL of YouTube video. (string)
-* \<embed\> : An embed player for YouTube video. (string)
-* \<about\> : The Description about YouTube video. (string)
+* \<id\> : The id specifies the YouTube video ID. _(string)_
+* \<youtube\> : The URL of YouTube video. _(string)_
+* \<embed\> : An embed player for YouTube video. _(string)_
+* \<about\> : The Description about YouTube video. _(string)_
 
 ```xml
 <?xml version='1.0' encoding='UTF-8'?>
