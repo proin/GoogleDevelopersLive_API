@@ -13,8 +13,13 @@ An API for Google Developers Live. You can get categories, list of shows and vid
 ### Step 1.
 Get list of categories from category.php
 
-ex) [http://mob.korea.ac.kr/enginie/gdlive/api/category.php](http://mob.korea.ac.kr/enginie/gdlive/api/category.php)
+##### HTTP request
+ex) `GET http://mob.korea.ac.kr/enginie/gdlive/api/category.php`
 
+##### Parameters
+There is no parameters.
+
+##### Response
 ```xml
 <root>
 	<data>
@@ -38,13 +43,14 @@ ex) [http://mob.korea.ac.kr/enginie/gdlive/api/category.php](http://mob.korea.ac
 * \<title\>	 : Category Title
 * \<code\> : Category Code
 
+
 ### Step 2.
 Get list of shows in selected category from browse.php
 
 [http://mob.korea.ac.kr/enginie/gdlive/api/browse.php?code=android&token=](http://mob.korea.ac.kr/enginie/gdlive/api/browse.php)
 
-* \<title\> : Category Title
-* \<code\> : Category Code
+* code  : Send code parameter which is you want from category.php
+* token : 
 
 ```xml
 <root>
