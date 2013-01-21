@@ -4,14 +4,14 @@ An API for Google Developers Live. You can get categories, list of shows and vid
 
 ## About
 
-* category.php : You can get list of categories.
-* browse.php : You can get list of shows in selected category.
-* shows.php	 : You can get video information.
+* category.php : It contains list of Google Developers Live categories.
+* browse.php : Returns a list of shows that match the API request parameters.
+* shows.php	 : There are some information about selected YouTube Video.
 
 ## Usage
 
 ### Step 1.
-Get list of categories from category.php
+Get list of categories from `category.php`.
 
 
 ##### HTTP request
@@ -23,8 +23,8 @@ There is no parameters.
 
 
 ##### Response
-* \<title\> : Category Title
-* \<code\> : Category Code
+* \<title\> : The title of category.
+* \<code\> : The code of category, which is use for `browse.php`.
 
 ```xml
 <?xml version='1.0' encoding='UTF-8'?>
@@ -50,7 +50,7 @@ There is no parameters.
 
 
 ### Step 2.
-Get list of shows in selected category from brwose.php
+Get list of shows in selected category from `brwose.php`.
 
 
 ##### HTTP request
@@ -63,8 +63,8 @@ ex) `GET http://mob.korea.ac.kr/enginie/gdlive/api/browse.php`
 
 
 ##### Response
-* \<title\>
-* \<link\>
+* \<title\> : 
+* \<link\> : 
 * \<image\>
 * \<date\>
 * \<nextPageToken\>
