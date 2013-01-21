@@ -15,6 +15,34 @@ Get list of categories from category.php
 
 ex) [http://mob.korea.ac.kr/enginie/gdlive/api/category.php](http://mob.korea.ac.kr/enginie/gdlive/api/category.php)
 
+```xml
+<root>
+	<data>
+		<number>0</number>
+		<title>All Categories</title>
+		<code>all</code>
+	</data>
+	<data>
+		<number>1</number>
+		<title>Ads</title>
+		<code>ads</code>
+	</data>
+	...
+	<data>
+		<number>12</number>
+		<title>YouTube</title>
+		<code>youtube</code>
+	</data>
+</root>
+```
+* \<title\>	 : Category Title
+* \<code\> : Category Code
+
+### Step 2.
+Get list of shows in selected category from browse.php
+
+[http://mob.korea.ac.kr/enginie/gdlive/api/browse.php?code=android&token=](http://mob.korea.ac.kr/enginie/gdlive/api/browse.php)
+
 * \<title\> : Category Title
 * \<code\> : Category Code
 
