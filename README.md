@@ -63,11 +63,11 @@ ex) `GET http://mob.korea.ac.kr/enginie/gdlive/api/browse.php`
 
 
 ##### Response
-* \<title\> : 
-* \<link\> : 
-* \<image\>
-* \<date\>
-* \<nextPageToken\>
+* \<title\> : The title of video.
+* \<link\> : The link of show’s web page.
+* \<image\> : The URL of preview image.
+* \<date\> : The date when show was updated.
+* \<nextPageToken\> : The token that can be used as the value of the **token** parameter to retrieve the next page in the result set.
 
 ```xml
 <?xml version='1.0' encoding='UTF-8'?>
